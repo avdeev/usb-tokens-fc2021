@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Используем USB-токены для аутентификации в браузере</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+            --ribbon-size: 40px;
+        }
+
+        .progress::before {
+            background-color: #cb6451;
+        }
+
+        .slide {
+            padding-top: 51px;
+            background-image: url("pictures/GP_DAYS_2.png"), url("pictures/Bg_2.png");
+            background-repeat: no-repeat, no-repeat;
+            background-size: 100px, 100%;
+            background-position: calc(100% - 25px) calc(100% - 25px), center
+        }
+
+        .slide.clear {
+            background-image: none;
+        }
+
+        .slide::after {
+            top: auto;
+            bottom: 0;
+            left: 40px;
+            right: auto;
+            color: initial;
+            background: none;
+        }
+
+        .slide h2.shout {
+            color: #37383d;
+        }
+    </style>
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Используем USB-токены для аутентификации в браузере</h1>
+        <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://mish.design/">Mish.Design</a></p>
+    </header>
+
+    <section class="slide clear" id="cover">
+        <div style="text-align: center; padding-top: 100px;">
+            <h2>Используем USB-токены для аутентификации в браузере</h2>
+            <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://mish.design/">Mish.Design</a></p>
+        </div>
+        <style>
+            #cover {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: #eed8b7;
+            }
+            #cover h2 {
+                margin: 0;
+                color: #37383d;
+                font-size: 90px;
+            }
+            #cover p {
+                margin: 10px 0 0;
+                color: #37383d;
+                font-size: 30px;
+            }
+            #cover p a {
+                color: #37383d;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>👨‍💻 О себе</h2>
+
+        <ol>
+            <li>👨 Алексей Авдеев (<a href="https://github.com/avdeev">https://github.com/avdeev</a>)</li>
+            <li class="next">👔 CTO, руковожу разработкой</li>
+            <li class="next">🏙️ Из Нижнего Новгорода, работаю в Москве</li>
+            <li class="next">🌐 <a href="https://mish.design/">Mish.Design</a></li>
+            <li class="next">👴 Программирую с 2002 года</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Задачи CTO</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Да здравствует веб-платформа!</h2>
+    </section>
+
+    <section class="slide">
+        <h2>👏 Спасибо!</h2>
+
+        <ul>
+            <li>👨 Алексей Авдеев</li>
+            <li>🌐 <a href="https://github.com/avdeev">https://github.com/avdeev</a></li>
+            <li>🌐 <a href="https://twitter.com/avdeev_alexey">https://twitter.com/avdeev_alexey</a></li>
+            <li>🌐 <a href="https://mish.design/">Mish.Design</a></li>
+        </ul>
+
+        <img src="pictures/iam.jpeg" alt="я" style="height: 250px; position: absolute; right: 55px; top: 141px;">
+    </section>
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="node_modules/@shower/core/dist/shower.js"></script>
+    <!-- Copyright © 2021 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
