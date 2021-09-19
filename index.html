@@ -9,8 +9,6 @@
         .shower {
             --slide-ratio: calc(16 / 9);
             --ribbon-size: 40px;
-			--color-grey: hsla(0,0%,100%,.95);
-			--color-blue: hsla(0,0%,100%,.95);
         }
 
         .progress::before {
@@ -24,7 +22,7 @@
             background-image: url("pictures/404small.png"), url("pictures/slide.jpg");
             background-repeat: no-repeat, no-repeat;
             background-size: 100px, 100%;
-            background-position: calc(100% - 25px) calc(100% - 25px), center
+            background-position: calc(100% - 25px) calc(100% - 25px), center;
         }
 
         .slide.clear {
@@ -39,10 +37,22 @@
             background: none;
         }
 
+		.slide h2 {
+			color: hsla(0,0%,100%,.95);
+		}
+
         .slide h2.shout {
             color: #fff;
 			font-size: 120px;
         }
+
+		.slide li::before {
+			color: hsla(0,0%,100%,.95);
+		}
+
+		.slide a {
+			color: hsl(210 49% 68% / 1)
+		}
     </style>
     </style>
 </head>
@@ -97,7 +107,27 @@
     </section>
 
     <section class="slide">
-        <img class="cover w" src="pictures/fido-logo.jpeg" alt="fido logo" style="width: 80%;">
+        <img class="cover w" src="pictures/fido-logo.jpeg" alt="fido logo" style="width: 90%;">
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/sber.png" alt="sber" style="width: 90%;">
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/mostsecure.png" alt="mostsecure">
+    </section>
+
+    <section class="slide clear">
+        <img class="cover w" src="pictures/door-lock.jpeg" alt="">
+    </section>
+
+    <section class="slide clear">
+        <img class="cover w" src="pictures/word-password-day.png" alt="">
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/most-common-passwords.png" alt="">
     </section>
 
     <section class="slide">
