@@ -9,15 +9,19 @@
         .shower {
             --slide-ratio: calc(16 / 9);
             --ribbon-size: 40px;
+			--color-grey: hsla(0,0%,100%,.95);
+			--color-blue: hsla(0,0%,100%,.95);
         }
 
         .progress::before {
-            background-color: #cb6451;
+			background-image: linear-gradient(93deg,#ff006d,#a82dff);
         }
 
         .slide {
+			color: hsla(0,0%,100%,.95);
             padding-top: 51px;
-            background-image: url("pictures/GP_DAYS_2.png"), url("pictures/Bg_2.png");
+			background-color: #120a5d;
+            background-image: url("pictures/404small.png"), url("pictures/slide.jpg");
             background-repeat: no-repeat, no-repeat;
             background-size: 100px, 100%;
             background-position: calc(100% - 25px) calc(100% - 25px), center
@@ -29,15 +33,15 @@
 
         .slide::after {
             top: auto;
-            bottom: 0;
-            left: 40px;
+			bottom: 0px;
+    		left: 5px;
             right: auto;
-            color: initial;
             background: none;
         }
 
         .slide h2.shout {
-            color: #37383d;
+            color: #fff;
+			font-size: 120px;
         }
     </style>
     </style>
@@ -45,34 +49,33 @@
 <body class="shower list">
 
     <header class="caption">
-        <h1>Используем USB-токены для аутентификации в браузере</h1>
+        <h1>Используем <nobr>USB-токены</nobr> для аутентификации в&nbsp;браузере</h1>
         <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://mish.design/">Mish.Design</a></p>
     </header>
 
     <section class="slide clear" id="cover">
-        <div style="text-align: center; padding-top: 100px;">
-            <h2>Используем USB-токены для аутентификации в браузере</h2>
+        <div style="text-align: center; padding-top: 280px;">
+            <h2>Используем <nobr>USB-токены</nobr> для аутентификации в&nbsp;браузере</h2>
             <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://mish.design/">Mish.Design</a></p>
         </div>
         <style>
             #cover {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                background-color: #eed8b7;
+				background: #120a5d url("pictures/cover.jpg") no-repeat center center;
+				background-size: contain;
             }
             #cover h2 {
                 margin: 0;
-                color: #37383d;
-                font-size: 90px;
+                color: #fff;
+                font-size: 40px;
+				text-transform: uppercase;
             }
             #cover p {
                 margin: 10px 0 0;
-                color: #37383d;
-                font-size: 30px;
+                color: #fff;
+                font-size: 17px;
             }
             #cover p a {
-                color: #37383d;
+                color: #fff;
             }
         </style>
     </section>
@@ -90,11 +93,19 @@
     </section>
 
     <section class="slide">
-        <h2 class="shout">Задачи CTO</h2>
+        <h2 class="shout">Пароли уязвимы</h2>
     </section>
 
     <section class="slide">
-        <h2 class="shout">Да здравствует веб-платформа!</h2>
+        <img class="cover w" src="pictures/fido-logo.jpeg" alt="fido logo" style="width: 80%;">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">WebAuthn</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Сделаем аутентификацию безопаснее</h2>
     </section>
 
     <section class="slide">
