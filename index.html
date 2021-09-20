@@ -39,12 +39,17 @@
 
 		.slide h2 {
 			color: hsla(0,0%,100%,.95);
+			font-size: 60px;
 		}
 
         .slide h2.shout {
             color: #fff;
 			font-size: 120px;
         }
+
+		.slide li {
+			font-size: 28px;
+		}
 
 		.slide li::before {
 			color: hsla(0,0%,100%,.95);
@@ -94,7 +99,7 @@
         <h2>👨‍💻 О себе</h2>
 
         <ol>
-            <li>👨 Алексей Авдеев (<a href="https://github.com/avdeev">https://github.com/avdeev</a>)</li>
+            <li>👨 Алексей Авдеев (<a href="https://twitter.com/avdeev_alexey">https://twitter.com/avdeev_alexey</a>)</li>
             <li class="next">👔 CTO, руковожу разработкой</li>
             <li class="next">🏙️ Из Нижнего Новгорода, работаю в Москве</li>
             <li class="next">🌐 <a href="https://mish.design/">Mish.Design</a></li>
@@ -106,6 +111,19 @@
         <h2 class="shout">Пароли уязвимы</h2>
     </section>
 
+	<!-- https://www.wired.com/2012/01/computer-password/ -->
+    <section class="slide">
+        <h2 class="shout">1960</h2>
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/corbato.jpeg" alt="" style="width: 90%;">
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/pwned.png" alt="" style="width: 90%;">
+    </section>
+
     <section class="slide">
         <img class="cover w" src="pictures/sber.png" alt="sber" style="width: 90%;">
     </section>
@@ -115,29 +133,98 @@
     </section>
 
     <section class="slide clear">
-        <img class="cover w" src="pictures/door-lock.jpeg" alt="">
-    </section>
-
-    <section class="slide clear">
         <img class="cover w" src="pictures/word-password-day.png" alt="">
     </section>
 
     <section class="slide">
-        <img class="cover w" src="pictures/most-common-passwords.png" alt="">
+        <img class="cover w" src="pictures/most-common-passwords.png" alt="" style="width: 80%;">
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/538_v1.png" alt="" style="width: 60%;">
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/936_v3.png" alt="">
+    </section>
+
+	<!-- Как вас и ваших пользователей могут взломать -->
+	<!-- Почему полной безопасности не существует -->
+    <section class="slide">
+        <img class="cover h" src="pictures/casmm-miessler-v5.3.png.webp" alt="">
     </section>
 
     <section class="slide">
         <h2 class="shout">Где решение?</h2>
     </section>
 
+	<!-- FIDO, FIDO2, U2F, passwordless, WebAuthn -->
     <section class="slide">
-        <img class="cover w" src="pictures/fido-logo.jpeg" alt="fido logo" style="width: 90%;">
+        <img class="cover w" src="pictures/FIDO_Alliance_tagline_cropped.jpeg" alt="fido logo" style="width: 90%;">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Улучшим пароли</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Сложные пароли</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Одноразовый пароль</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">SMS-based</h2>
+    </section>
+
+	<section class="slide">
+        <h2>SMS-based</h2>
+
+        <ul>
+            <li>Не приходят</li>
+            <li class="next">Стоят денег</li>
+            <li class="next">Можно перехватить</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">PUSH-код</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Двухфакторная аутентификация</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">OTP-код</h2>
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/google-advanced-protection-program.jpeg" alt="">
+    </section>
+
+	<section class="slide">
+        <h2>Правила компьютерной безопасности</h2>
+
+        <ul>
+            <li>не используйте компьютер</li>
+            <li class="next">не включайте компьютер</li>
+            <li class="next">не владейте компьютером</li>
+        </ul>
+    </section>
+
+	<!-- Что такое USB-токен и какие они бывают -->
+    <section class="slide clear">
+        <img class="cover w" src="pictures/door-lock.jpeg" alt="">
     </section>
 
     <section class="slide">
         <h2 class="shout">WebAuthn</h2>
     </section>
 
+	<!-- Реализуем простейшую аутентификацию в браузере с USB-токеном -->
     <section class="slide">
         <h2 class="shout">Демо</h2>
 	</section>
