@@ -2,7 +2,7 @@
 const credential = await navigator.credentials.create({
   publicKey: {
     rp: { name: "Acme" },
-    user: { id: Uint8Array.from("1234567890123456", c => c.charCodeAt(0)), name: "john.p.smith@example.com", displayName: "John P. Smith" },
+    user: { id: Uint8Array.from("1234567890123456", c => c.charCodeAt(0)), name: "a.avdeev@mish.design", displayName: "Avdeev" },
     pubKeyCredParams: [{ type: "public-key", alg: -7 }],
     attestation: "none",
     timeout: 60000,
