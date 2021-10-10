@@ -52,6 +52,10 @@
 		.slide pre {
 			font-size: 30px;
 		}
+
+		.cover {
+			z-index: 1;
+		}
     </style>
     </style>
 </head>
@@ -63,7 +67,7 @@
     </header>
 
     <section class="slide clear" id="cover">
-        <div style="width: 600px; padding-top: 30px;">
+        <div style="width: 640px; padding-top: 30px; margin-left: -10px;">
             <h2>Используем <nobr>USB-токены</nobr> для аутентификации в&nbsp;браузере</h2>
             <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://mish.design/">Mish.Design</a></p>
         </div>
@@ -75,12 +79,12 @@
             #cover h2 {
                 margin: 0;
                 color: #000;
-                font-size: 60px;
+                font-size: 62px;
             }
             #cover p {
-                margin: 10px 0 0;
+                margin: 18px 0 0;
                 color: #000;
-                font-size: 20px;
+                font-size: 24px;
             }
             #cover p a {
                 color: #000;
@@ -101,7 +105,7 @@
     </section>
 
     <section class="slide">
-        <img class="cover w" src="pictures/auth.png" alt="" style="width: 90%;">
+        <img class="cover w" src="pictures/auth.png" alt="" style="width: 90%; box-shadow: 5px 5px 20px 8px #b9b9b9;">
     </section>
 
     <section class="slide">
@@ -113,7 +117,7 @@
         <h2 class="shout">1960</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide clear">
         <img class="cover w" src="pictures/corbato.jpeg" alt="" style="width: 90%;">
     </section>
 
@@ -126,10 +130,6 @@
     </section>
 
     <section class="slide">
-        <img class="cover w" src="pictures/most-common-passwords.png" alt="" style="width: 100%;">
-    </section>
-
-    <section class="slide">
         <img class="cover h" src="pictures/password-problem.png" alt="">
     </section>
 
@@ -137,15 +137,15 @@
         <h2 class="shout">Сложный пароль&nbsp;&mdash; сложно запомнить</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide clear">
         <img class="cover w" src="pictures/pwned.png" alt="">
     </section>
 
     <section class="slide">
-        <img class="cover w" src="pictures/sber.png" alt="sber" style="width: 90%;">
+        <img class="cover w" src="pictures/sber.png" alt="sber" style="width: 90%; box-shadow: 5px 5px 20px 8px #b9b9b9;">
     </section>
 
-    <section class="slide">
+    <section class="slide clear">
         <img class="cover h" src="pictures/number-of-passwords-cracked.png" alt="">
     </section>
 
@@ -153,7 +153,7 @@
         <h2 class="shout">Много паролей</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide clear">
         <img class="cover w" src="pictures/mostsecure.png" alt="mostsecure">
     </section>
 
@@ -165,8 +165,30 @@
         <img class="cover h" src="pictures/936_v3.png" alt="">
     </section>
 
+	<!-- Stop programming computers sand was never meant to think this is very cruel to rocks shirt -->
+
     <section class="slide">
-        <img class="cover w" src="pictures/word-password-day.png" alt="">
+        <h2 class="shout">Менеджеры<br>паролей</h2>
+    </section>
+
+	<section class="slide">
+        <h2>Менеджеры паролей</h2>
+
+        <ul>
+            <li>Все пароли в одном месте</li>
+            <li class="next">Простой мастер-пароль</li>
+			<li class="next">Потеря мастер-пароля</li>
+			<li class="next">Взлом устройства</li>
+			<li class="next">Утечки</li>
+        </ul>
+    </section>
+
+    <section class="slide clear">
+        <img class="cover h" src="pictures/lastpass.png" alt="">
+    </section>
+
+    <section class="slide clear">
+        <img class="cover h" src="pictures/onelogin3.png" alt="">
     </section>
 
     <section class="slide">
@@ -189,7 +211,7 @@
     </section>
 
     <section class="slide">
-        <h2 class="shout">Одноразовый пароль</h2>
+        <h2 class="shout">Одноразовый<br>пароль<br>(OTP)</h2>
     </section>
 
     <section class="slide">
@@ -208,7 +230,7 @@
         </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide clear">
         <img class="cover w" src="pictures/sms-regru.png" alt="" style="width: 90%;">
     </section>
 
@@ -220,8 +242,12 @@
             <li>Стоят денег</li>
 			<li class="next">Можно подглядеть</li>
 			<li class="next">Можно подменить/перевыпустить SIM-карту</li>
-            <li class="next">Можно перехватить</li>
+            <li class="next">Можно перехватить (<b>SS7 Attack</b>)</li>
         </ul>
+    </section>
+
+    <section class="slide clear">
+        <img class="cover h" src="pictures/ss7-dev2.png" alt="">
     </section>
 
     <section class="slide">
@@ -244,11 +270,11 @@
         <h2 class="shout">Authenticator app</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide clear">
         <img class="cover w" src="pictures/instauth.webp" alt="" style="width: 90%;">
     </section>
 
-    <section class="slide">
+    <section class="slide clear">
         <img class="cover h" src="pictures/login-with-2fa-flow.png" alt="">
     </section>
 
@@ -257,6 +283,7 @@
 
 		<ul>
 			<li>Секреты хранятся программно</li>
+			<li class="next">Энергозависимы</li>
 			<li class="next">Уязвимы для фишинга</li>
 		</ul>
     </section>
@@ -266,7 +293,27 @@
     </section>
 
     <section class="slide">
-        <h2 class="shout">Токен</h2>
+        <img class="cover h" src="pictures/phishing.png" alt="" style="height: 95%;">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Биометрия</h2>
+    </section>
+
+	<section class="slide">
+        <h2>Биометрия</h2>
+
+		<ul>
+			<li>Дорого</li>
+			<li>Не точно</li>
+			<li>Нельзя поменять</li>
+			<li>Отслеживание и данные</li>
+			<li class="next">Уязвимы для фишинга</li>
+		</ul>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout" style="line-height: 70px;">Токен<br><span style="font-size: 60px;">(кроссплатформенный аутентификатор)</span></h2>
     </section>
 
     <section class="slide">
@@ -286,7 +333,7 @@
     </section>
 
     <section class="slide">
-        <h2 class="shout">Токены без подключения</h2>
+        <h2 class="shout">Токены без подключения (OTP)</h2>
     </section>
 
     <section class="slide">
@@ -295,6 +342,10 @@
 
     <section class="slide">
         <img class="cover h" src="pictures/token-montage-web-800x800.png" alt="">
+    </section>
+
+	<section class="slide clear">
+        <img class="cover h" src="pictures/201907031611041190.png" alt="">
     </section>
 
     <section class="slide">
@@ -306,6 +357,10 @@
     </section>
 
     <section class="slide">
+        <img class="cover h" src="pictures/HLB1KdyBU9zqK1RjSZPcq6zTepXag.jpeg" alt="">
+    </section>
+
+    <section class="slide">
         <h2 class="shout">Токены с подключением</h2>
     </section>
 
@@ -314,15 +369,55 @@
     </section>
 
     <section class="slide">
-        <h2 class="shout">Встроенная криптография</h2>
+        <img class="cover w" src="pictures/202009111102534217.png" alt="">
     </section>
 
     <section class="slide">
+        <img class="cover h" src="pictures/213.970.jpg" alt="">
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/yubikeynano2.webp" alt="">
+    </section>
+
+	<section class="slide">
+        <img class="cover w" src="pictures/cross-platform.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Платформенный аутентификатор</h2>
+    </section>
+
+	<section class="slide">
+        <h2 class="shout">Криптопроцессор</h2>
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/apple-t2-1.jpeg" alt="">
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/tmp.jpeg" alt="">
+    </section>
+
+    <section class="slide clear">
         <img class="cover h" src="pictures/Google-chip.jpeg" alt="">
     </section>
 
+	<section class="slide">
+        <h2 class="shout">Сканер</h2>
+    </section>
+
     <section class="slide">
-        <img class="cover h" src="pictures/Secure Enclave.png" alt="">
+        <img class="cover w" src="pictures/honor.jpeg" alt="">
+    </section>
+
+	<section class="slide">
+        <img class="cover w" src="pictures/platform.png" alt="">
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/User_experience_on_Pixel_3_small.gif" alt="" style="width: 90%;">
     </section>
 
     <section class="slide">
@@ -348,7 +443,7 @@
         </ul>
     </section>
 
-	<section class="slide">
+	<section class="slide clear">
         <img class="cover w" src="pictures/hat.png" alt="" style="width: 90%;">
     </section>
 
@@ -365,7 +460,7 @@
         <img class="cover w" src="pictures/fido-board-member.jpeg" alt="">
     </section>
 
-    <section class="slide">
+    <section class="slide clear">
         <img class="cover w" src="pictures/fido_cert.png" alt="" style="width: 90%;">
     </section>
 
@@ -373,7 +468,7 @@
         <h2 class="shout">Universal Authentication Framework<br>(UAF, 2014)</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide clear">
         <img class="cover w" src="pictures/FIDO_UAF_Experience.png" alt="" style="width: 90%;background-color: #fff;padding: 20px;">
     </section>
 
@@ -385,7 +480,7 @@
         <h2 class="shout">Universal 2nd Factor<br>(U2F)</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide clear">
         <img class="cover w" src="pictures/FIDO_U2F_Experience.png" alt="" style="width: 90%;background-color: #fff;padding: 20px;">
     </section>
 
@@ -413,7 +508,7 @@
         <img class="cover w" src="pictures/fido-tw.png" alt="" style="width: 90%;">
     </section>
 
-    <section class="slide">
+    <section class="slide clear">
         <img class="cover w" src="pictures/1_DbtntX182pVCygLSBLVGuQ.png" alt="">
     </section>
 
@@ -425,12 +520,8 @@
         <img class="cover w" src="pictures/5-2.jpeg" alt="">
     </section>
 
-    <section class="slide">
+    <section class="slide clear">
         <img class="cover w" src="pictures/caniuse.png" alt="" style="width: 100%;">
-    </section>
-
-    <section class="slide">
-        <img class="cover w" src="pictures/User_experience_on_Pixel_3_small.gif" alt="" style="width: 90%;">
     </section>
 
     <section class="slide">
@@ -445,26 +536,10 @@
         </pre>
     </section>
 
-    <section class="slide">
-        <img class="cover w" src="pictures/WebAuthn_Registration_r4.png" alt="" style="width: 90%;background-color: #fff;padding: 20px;">
-    </section>
-
-    <section class="slide">
-        <img class="cover w" src="pictures/MDN Webauthn Authentication (r1).png" alt="" style="width: 90%;background-color: #fff;padding: 20px;">
-    </section>
-
 	<!-- Реализуем простейшую аутентификацию в браузере с USB-токеном -->
     <section class="slide">
         <h2 class="shout">Демо</h2>
 	</section>
-
-    <section class="slide">
-        <img class="cover h" src="pictures/using-webauthn.png" alt="">
-    </section>
-
-    <section class="slide">
-        <img class="cover w" src="pictures/wallix.png" alt="">
-    </section>
 
     <section class="slide">
         <h2 class="shout">Что дальше</h2>
