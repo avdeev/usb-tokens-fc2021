@@ -12,17 +12,15 @@
         }
 
         .progress::before {
-			background-image: linear-gradient(93deg,#ff006d,#a82dff);
+			background-color: #ff4141;
         }
 
         .slide {
-			color: hsla(0,0%,100%,.95);
             padding-top: 51px;
-			background-color: #120a5d;
-            background-image: url("pictures/404small.png"), url("pictures/slide.jpg");
-            background-repeat: no-repeat, no-repeat;
-            background-size: 100px, 100%;
-            background-position: calc(100% - 25px) calc(100% - 25px), center;
+            background-image: url("pictures/fc21-cover.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
         }
 
         .slide.clear {
@@ -32,35 +30,23 @@
         .slide::after {
             top: auto;
 			bottom: 0px;
-    		left: 5px;
+			left: 20px;
             right: auto;
             background: none;
+			color: #000;
         }
 
 		.slide h2 {
-			color: hsla(0,0%,100%,.95);
+			color: #000;
 			font-size: 60px;
 		}
 
         .slide h2.shout {
-            color: #fff;
 			font-size: 120px;
         }
 
 		.slide li {
 			font-size: 28px;
-		}
-
-		.slide li::before {
-			color: hsla(0,0%,100%,.95);
-		}
-
-		.slide a {
-			color: hsl(210 49% 68% / 1)
-		}
-
-		.slide pre code:not(:only-child)::before {
-			color: hsla(0,0%,100%,.95);
 		}
 
 		.slide pre {
@@ -77,28 +63,27 @@
     </header>
 
     <section class="slide clear" id="cover">
-        <div style="text-align: center; padding-top: 280px;">
+        <div style="width: 600px; padding-top: 30px;">
             <h2>Используем <nobr>USB-токены</nobr> для аутентификации в&nbsp;браузере</h2>
             <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://mish.design/">Mish.Design</a></p>
         </div>
         <style>
             #cover {
-				background: #120a5d url("pictures/cover.jpg") no-repeat center center;
+				background: url("pictures/fc21-title.png") no-repeat center center;
 				background-size: contain;
             }
             #cover h2 {
                 margin: 0;
-                color: #fff;
-                font-size: 40px;
-				text-transform: uppercase;
+                color: #000;
+                font-size: 60px;
             }
             #cover p {
                 margin: 10px 0 0;
-                color: #fff;
-                font-size: 17px;
+                color: #000;
+                font-size: 20px;
             }
             #cover p a {
-                color: #fff;
+                color: #000;
             }
         </style>
     </section>
