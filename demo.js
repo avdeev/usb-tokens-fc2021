@@ -5,10 +5,11 @@ const credential = await navigator.credentials.create({
     user: { id: Uint8Array.from("1234567890123456", c => c.charCodeAt(0)), name: "a.avdeev@mish.design", displayName: "Avdeev" },
     pubKeyCredParams: [{ type: "public-key", alg: -7 }],
     attestation: "none",
+	// attestation: "direct",
     timeout: 60000,
     challenge: new Uint8Array(26),
     authenticatorSelection:{
-	  // userVerification: "required",
+	//   userVerification: "required",
       userVerification: "discouraged"
     },
   }
