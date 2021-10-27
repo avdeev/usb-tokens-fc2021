@@ -1,6 +1,6 @@
 # Используем USB-токены для аутентификации в браузере
 
-Слайды для доклада на конференцию [FrontendConf 2021](https://frontendconf.ru/moscow/2021) в Моске
+Слайды для доклада на конференцию [FrontendConf 2021](https://frontendconf.ru/moscow/2021) в Москве
 
 ## Аннотация
 
